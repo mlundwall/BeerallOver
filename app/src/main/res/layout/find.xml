@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.lundwall.beerallover.BeerAllOverMain$PlaceholderFragment">
+
+<TextView
+        android:id="@+id/section_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorMorkTekst"
+        android:text="Select location" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/ergemt"
+        android:layout_above="@+id/spinner"
+        android:layout_toEndOf="@+id/section_label"
+        android:layout_marginStart="20dp"
+        android:clickable="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/billede"
+        android:contentDescription="Billede"
+        android:adjustViewBounds="true"
+        android:maxWidth="500dp"
+        android:maxHeight="500dp"
+        android:minWidth="300dp"
+        android:layout_alignWithParentIfMissing="false"
+        android:baselineAlignBottom="true"
+        android:src="@drawable/beerallover"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_below="@+id/section_label"
+        android:layout_alignParentStart="false" />
+
+    <!-- GPS disablet -->
+    <!-- Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ChooseGPS"
+        android:id="@+id/GPSknap"
+        android:layout_below="@+id/spinner"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/knaptextstyle"
+        android:textAllCaps="false"
+        android:textColor="@color/colorMorkTekst"
+        android:paddingLeft="@dimen/Knappadding"
+        android:paddingRight="@dimen/Knappadding"
+        / -->
+
+    <!-- I knapdef nedenfor fjernet GPS disablet :
+          android:layout_below="@+id/GPSknap"
+        i stedet indsat:
+          android:layout_below="@+id/spinner"
+    -->
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/GemLand"
+        android:id="@+id/GemLandKnap"
+        android:layout_below="@+id/spinner"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/knaptextstyle"
+        android:textAllCaps="false"
+        android:textColor="@color/colorMorkTekst"
+        android:paddingLeft="@dimen/Knappadding"
+        android:paddingRight="@dimen/Knappadding"
+        />
+
+</RelativeLayout>

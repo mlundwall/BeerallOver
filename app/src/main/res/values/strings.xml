@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Beer all Over</string>
+    <string name="titel">Beer all Over</string>
+
+    <string name="action_settings">Setup</string>
+    <string name="action_om">About</string>
+
+    <string name="NoInternet_exiting">Sorry, no internet and no off-line country stored - exiting"</string>
+    <string name="NoInternet">You are offline</string>
+    <string name="FejlHentning">Error retrieving info</string>
+    <string name="WaitLong">Downloading data &#8230; please wait</string>
+    <string name="WaitShort">Getting info &#8230;</string>
+    <string name="Saving_country">Saving beers - wait &#8230;</string>
+    <string name="DropdownTitle">Select location</string>
+    <string name="ChooseGPS">Find location by GPS</string>
+    <string name="GemLand">Save selected country</string>
+    <string name="NoBeersHere">You are offline</string>
+    <string name="beerNotSelected">No beer selected</string>
+    <string name="beerOffline">Cannot review - country offline</string>
+    <string name="YourComment">Your comment - more at http://beerallover.com/rating</string>
+    <string name="ChangeReview">You have reviewed this. Change it?</string>
+    <string name="MakeReview">Review this beer</string>
+    <string name="SendReview">Send review</string>
+    <string name="ReviewSent">Review sent</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Back">Return</string>
+    <string name="Save">Save</string>
+    <string name="Saved">(saved)</string>
+    <string name="setup_findlok">Find location by GPS</string>
+    <string name="setup_lavpfft">PFFFT sound on open</string>
+    <string name="about_start">This Beer App (BAPP)is made for you who travels - and happens to like beer</string>
+    <string name="about_text">The intention is to present the most popular beer brands in each of the selected 229 countries and territories around the world.\n
+    The following criteria have been used when choosing the beer brands in each of the countries:\n
+
+    A.	For each country a minimum of 1 and a maximum of 30 beer brands have been selected.\n
+    B.	The selected beer brands are produced in the country (= no imported beers are included).\n
+    C.	The selected beer brands are the most sold/most popular in the country.\n
+    D.	Each beer brand is widely available in supermarkets, shops, bars and restaurants.\n
+    E.	Each of the beer brands needs to be available in at the least the 4 largest cities in the country.\n
+    F.	In countries with no local beer production the most popular imported beer brand is listed.\n
+    G.	In countries where beer (and alcohol) is prohibited one malt beverage (non-alcoholic) is listed.\n\n
+    Website and contact\n
+    Visit the entertaining website: www.beerallover.com\n
+    In case you have suggestions, criticism or (most likely) flattering comments, send an email to info@beerallover.com\n</string>
+</resources>

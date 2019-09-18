@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.lundwall.beerallover.BeerAllOverMain$PlaceholderFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   Beer all Over"
+        android:id="@+id/xtitel"
+        android:textColor="@android:color/white"
+        android:textIsSelectable="false"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+
+    <TextView
+        android:text="Setup"
+        android:id="@+id/setup_label"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/colorListeTekst"
+        android:layout_below="@+id/xtitel"
+        android:layout_alignStart="@+id/xtitel" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tableLayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/setup_label"
+        android:layout_marginTop="20dp">
+
+        <!-- GPS Disablet
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+              CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorListeTekst"
+                android:text="@string/setup_findlok"
+                android:id="@+id/gpscheck"
+                android:layout_column="0" />
+        </TableRow>
+         -->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorListeTekst"
+                android:layout_height="wrap_content"
+                android:text="@string/setup_lavpfft"
+                android:id="@+id/lydcheck"
+                android:layout_column="0" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Cancel"
+        android:id="@+id/fortrydKnap"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/knaptextstyle"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/tableLayout"
+        android:textAllCaps="false"
+        android:textColor="@color/colorMorkTekst"
+        android:paddingLeft="@dimen/Knappadding"
+        android:paddingRight="@dimen/Knappadding"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Save"
+        android:id="@+id/gemKnap"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/knaptextstyle"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/tableLayout"
+        android:textAllCaps="false"
+        android:textColor="@color/colorMorkTekst"
+        android:paddingLeft="@dimen/Knappadding"
+        android:paddingRight="@dimen/Knappadding"
+        />
+
+</RelativeLayout>

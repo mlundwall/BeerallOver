@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        Release {
+            keyAlias 'beerallover'
+            keyPassword 'N0pasara5'
+            storeFile file('C:/Dokumenter/Google Drev/Privat/Beer all Over/AndroidCertificateStore.jks')
+            storePassword 'N0pasara5'
+        }
+    }
+    compileSdkVersion 28
+    buildToolsVersion '28.0.2'
+    defaultConfig {
+        applicationId "com.lundwall.beerallover"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 5
+        versionName 'BaO ver. 5'
+        signingConfig signingConfigs.Release
+    }
+    buildTypes {
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.13-beta-3'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.android.support:design:28.0.1'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.google.android.gms:play-services-base:11.0.4'
+    implementation 'com.google.android.gms:play-services-location:11.0.4'
+    implementation 'com.google.android.gms:play-services-identity:11.0.4'
+    implementation 'com.google.firebase:firebase-appindexing:11.0.4'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+}
+
+

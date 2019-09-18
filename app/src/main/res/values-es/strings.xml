@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Beer all Over</string>
+    <string name="about_text">El concepto es presentar las marcas mas populares en los 229 paizes y territorias sellectionadas.\n Los siguientes criterias ha sido usados en cada paiz:\n \n A.	Por cada paiz un minimo de 1 y un maximo de 30 cervezas han sidos seleccionadas.\n B.	Las cervezas seleccionadas estan producidos en el paiz (=ninguno cervezas importadas)\n C.	Las cervesas son los mas vendidas/populares en el paiz.\n D.	Cada es generalmente accesible in supermarcados, tiendas, bars y restaurantes.\n E.	Cada cerverca es accesible en a lo menos los 4 ciudades mas grandes del paiz.\n F.	In paizes sin produccion local de cervesa, las cervaces importadas mas populares estan alistadas.\n G.	In paizes donde cerveza (y alcohol) esta prohibido, un malt (non-alcoholic) esta listada.\n \n Version Pro:\n Compre la version Pro de Beer all Over. Por solamente US$ 2 recibes los siguiente opciones addicionales:\n 	- Un app libre de commerciales\n 	- Possibilidad de hacer valuaciones de todas las cervesas (a parte del rating)\n 	- Descargar offline data\n 	\n Webside y contacto\nVisita nuestre amusante website: www.beerallover.com\n 	Si tienes suggerencias, critica o (mas probable) commantarios halagüeños, mandenos por favor un email a info@beerallover.com</string>
+    <string name="DropdownTitle">Seleecionar país</string>
+    <string name="MakeReview">Haga su vaulación</string>
+    <string name="ChangeReview">Re-evaluar esta?</string>
+    <string name="NoBeersHere">Esta sin internet</string>
+    <string name="NoInternet">Esta sin internet</string>
+    <string name="ReviewSent">Valuación enviado</string>
+    <string name="SendReview">Enviar valuación</string>
+    <string name="YourComment">Su evaluación aqui ...</string>
+    <string name="about_start">Este BAPP está hecho por tí, que viaja y gusta cerveca </string>
+    <string name="action_om">Sobre</string>
+    <string name="action_settings">Cofiguarción</string>
+    <string name="beerNotSelected">Nada seleccionado</string>
+    <string name="setup_findlok">Selleción por GPS</string>
+    <string name="setup_lavpfft">PFFT-sonido incial</string>
+    <string name="titel">Cerverca en Todos Lados</string>
+    <string name="GemLand">Salvar presente paíz</string>
+    <string name="ChooseGPS">Location por GPS</string>
+    <string name="Save">Salvar</string>
+    <string name="Back">Regresar</string>
+    <string name="Cancel">Cancelar</string>
+    <string name="WaitLong">Cargando datos ... espere por favor</string>
+    <string name="WaitShort">Leyendo ...</string>
+    <string name="FejlHentning">Error leyendo info</string>
+    <string name="Saving_country">Salvando - espere por favor ...</string>
+    <string name="beerOffline">Evaluación no possible - paìs off-line</string>
+    <string name="Saved">(salvado)</string>
+    <string name="NoInternet_exiting">No internet y ningun off-line país salvado - saliendo</string>
+</resources>
