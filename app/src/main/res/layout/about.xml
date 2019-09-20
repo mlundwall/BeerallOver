@@ -1,91 +1,77 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.lundwall.beerallover.BeerAllOverMain$PlaceholderFragment">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="   Beer all Over"
-        android:id="@+id/xtitel"
-        android:textColor="@android:color/white"
-        android:textIsSelectable="false"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:background="@color/colorPrimary"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/about_start"
-        android:id="@+id/Overskrift"
-        android:textColor="@color/colorListeTekst"
-        android:textIsSelectable="false"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_below="@+id/xtitel"
-        android:layout_alignEnd="@+id/scrollView" />
-
-    <ScrollView
-        android:layout_width="fill_parent"
-        android:layout_height="match_parent"
-        android:scrollbars="vertical"
-        android:layout_alignParentEnd="true"
-        android:layout_below="@+id/Overskrift"
-        android:layout_above="@+id/Hilsen"
-        android:id="@+id/scrollView">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/about_text"
-        android:id="@+id/Indhold"
-        android:textColor="#386297"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_above="@+id/Hilsen"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/Overskrift"
-        android:textIsSelectable="false"
-        android:layout_alignParentEnd="true"
-        android:elegantTextHeight="true"
-        android:clickable="false" />
-
-    </ScrollView>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Made for for your refreshment by\nMikael Bjerrum &amp; Mads Lundwall"
-        android:id="@+id/Hilsen"
-        android:textIsSelectable="false"
-        android:textSize="10dp"
-        android:layout_alignBottom="@+id/returKnap"
-        android:layout_alignStart="@+id/Overskrift"
-        android:layout_marginTop="30dp" />
-
     <Button
+        android:id="@+id/returKnap"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Back"
-        android:id="@+id/returKnap"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
         android:background="@drawable/knaptextstyle"
-        android:layout_alignParentBottom="true"
-        android:layout_alignEnd="@+id/Overskrift"
-        android:layout_marginTop="20dp"
-        android:textAllCaps="false"
-        android:textColor="@color/colorMorkTekst"
         android:paddingLeft="@dimen/Knappadding"
         android:paddingRight="@dimen/Knappadding"
-        />
+        android:text="@string/Back"
+        android:textAllCaps="false"
+        android:textColor="@color/colorMorkTekst"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-</RelativeLayout>
+    <TextView
+        android:id="@+id/Overskrift"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="71dp"
+        android:text="@string/about_start"
+        android:textColor="@color/colorListeTekst"
+        android:textIsSelectable="false"
+        app:layout_constraintEnd_toEndOf="@+id/Indhold"
+        app:layout_constraintStart_toStartOf="@+id/Indhold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/Indhold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:clickable="false"
+        android:elegantTextHeight="true"
+        android:text="@string/about_text"
+        android:textColor="#386297"
+        android:textIsSelectable="false"
+        app:layout_constraintEnd_toEndOf="@+id/returKnap"
+        app:layout_constraintStart_toStartOf="@+id/Hilsen"
+        app:layout_constraintTop_toBottomOf="@+id/Overskrift" />
+
+
+    <TextView
+        android:id="@+id/Hilsen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="23dp"
+        android:text="Made for for your refreshment by\nMikael Bjerrum &amp; Mads Lundwall"
+        android:textIsSelectable="false"
+        android:textSize="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/returKnap" />
+
+    <TextView
+        android:id="@+id/xtitel"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimary"
+        android:text="   Beer all Over"
+        android:textColor="@android:color/white"
+        android:textIsSelectable="false"
+        app:layout_constraintBottom_toTopOf="@+id/Overskrift"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
